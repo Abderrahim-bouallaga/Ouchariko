@@ -12,7 +12,7 @@ function App() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await fetch("https://thankful-forest-0428d8e03.4.azurestaticapps.net/add-review", {
+        await fetch("http://localhost:5000/add-review", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(form),
