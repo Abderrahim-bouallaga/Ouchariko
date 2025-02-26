@@ -5,14 +5,14 @@ function App() {
     const [form, setForm] = useState({ name: "", email: "", review: "" });
 
     useEffect(() => {
-        fetch("https://happy-wave-014aa7603.4.azurestaticapps.net/get-reviews")
+        fetch("https://thankful-forest-0428d8e03.4.azurestaticapps.net/get-reviews")
             .then(res => res.json())
             .then(data => setReviews(data));
     }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await fetch("https://happy-wave-014aa7603.4.azurestaticapps.net/add-review", {
+        await fetch("https://thankful-forest-0428d8e03.4.azurestaticapps.net/add-review", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(form),
