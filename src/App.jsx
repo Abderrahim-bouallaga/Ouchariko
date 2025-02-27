@@ -12,7 +12,7 @@ function App() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await fetch("http://localhost:5000/add-review", {
+        await fetch("http://localhost:5000/get-reviews", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(form),
