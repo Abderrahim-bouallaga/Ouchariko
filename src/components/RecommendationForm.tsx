@@ -55,8 +55,11 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({ pdfId }) => {
       <TextField
         type="number"
         label="Page Number"
-        value={page}
-        onChange={(e) => setPage(e.target.value)}
+        value={page === 0 ? "" : page} // Allow empty input instead of resetting to 0
+        onChange={(e) => {
+          const value = e.target.value;
+          setPage(value === "" ? 0 : Number(value)); // Convert input to number, allowing empty state
+        }}
         fullWidth
         margin="normal"
       />
