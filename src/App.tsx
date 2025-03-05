@@ -22,7 +22,7 @@ const App: React.FC = () => {
       {/* Header Section */}
       <div className="header">
         <img src="/logo.png" alt="Logo" className="logo" /> {/* Add the logo here */}
-        <h1 className="title">Ouchariko Recommendation</h1>
+        <h1 className="title">Platforme de Recommendations du CESE</h1>
       </div>
 
       {/* Dropdown Selection */}
