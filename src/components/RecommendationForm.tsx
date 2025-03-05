@@ -24,7 +24,7 @@ const RecommendationForm: React.FC<RecommendationFormProps> = ({ pdfId }) => {
 
     try {
       // Make the API call to submit the recommendation
-      const response = await axios.post('http://localhost:5000/api/recommendations', recommendationData);
+      const response = await axios.post('http://192.168.1.2:5000/api/recommendations', recommendationData);
       console.log('Recommendation submitted successfully:', response.data);
       
       // Reset the form fields after submission
