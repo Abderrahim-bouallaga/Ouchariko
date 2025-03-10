@@ -61,6 +61,9 @@ const App: React.FC = () => {
         <PdfViewer pdfUrl={`/pdfs/${selectedPdf}`} />
       </div>
 
+      {/* Recommendation Form */}
+      <RecommendationForm pdfId={selectedPdf} />
+
       {/* Button to Toggle Recommendations */}
       <Button
         variant="contained"
